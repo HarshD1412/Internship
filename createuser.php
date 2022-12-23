@@ -37,7 +37,7 @@ session_start();
 <?php
 
 if(isset($_POST['register'])){
-  $conn = mysqli_connect("localhost","root","","harsh","3306");
+  $conn = mysqli_connect("localhost","root","","harsh","3308");
 if(!$conn){
     echo "cant connect database".mysqli_connect_error($conn);
     exit;
