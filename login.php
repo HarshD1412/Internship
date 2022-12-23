@@ -9,25 +9,30 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
+<div class="text-center w-50 h-100 mx-auto">
+<form class="w-75" action="<?=$_SERVER['PHP_SELF'];?>" method="post">
 
 
-        <div class="container">
-          <label for="username"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
+
+  
+       <div class="mb-3">
+        
+          <label for="username" class="form-label"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" class="form-control" id="username" name="username" required><br><br>
+
+          <label for="password" class="form-label"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" class="form-control" id="password" name="password" required><br><br>
       
-          <label for="password"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="password" name="password" required><br><br>
-      
-          <button type="submit" name="submit">Login</button>
+          <button type="submit" name="submit" class="btn btn-primary">login</button>
          
         </div>
-      
-        
-      </form>
+</form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 </body>
 </html>
 <?php
